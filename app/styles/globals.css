@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+body{
+  /* font-family: 'Lato', sans-serif !important; */
+}
+.bannerImage{
+  background-image: url(../assets/images/banner-bg-4.jpg);
+}
+.navbarBanner{
+  background-color: transparent !important;
+}
+.logo{
+  filter: brightness(100);
+}
+.Navbar_Collapse button{
+  color: white;
+}
+.Navbar_Collapse button:hover{
+  color: red;
+}
+.ripple1{
+  animation: ripple1 1s linear infinite;
+}
+@keyframes ripple1 {
+  0%{
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  100%{
+    opacity: 0;
+    transform: scale(2);
+  }
+}
+
+
+
+.card:hover{
+  transform: translateY(-10px);
+}
+.card:hover .card_icon{
+  transform: rotateY(360deg);
+  color: white !important;
+}
+
+
+.counter_bg{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.775), rgba(0, 0, 0, 0.721)) ,url(../assets/images/challenges-bg.jpg);
+}
+.solution_card1{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.775), rgba(0, 0, 0, 0.721)) ,url(../assets/images/services7.jpg);
+}
+.solution_card2{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.775), rgba(0, 0, 0, 0.721)) ,url(../assets/images/services8.jpg);
+}
+.solution_card3{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.775), rgba(0, 0, 0, 0.721)) ,url(../assets/images/services9.jpg);
+}
+.solution_card4{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.775), rgba(0, 0, 0, 0.721)) ,url(../assets/images/services10.jpg);
+}
+.solution_card5{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.775), rgba(0, 0, 0, 0.721)) ,url(../assets/images/services11.jpg);
+}
+.solution_card6{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.775), rgba(0, 0, 0, 0.721)) ,url(../assets/images/services12.jpg);
+}
+.web_sec_bg{
+  background:url(../assets/images/web-bg2.jpg);
+}
+
+@media screen and (min-width:768px) {
+  .toggler{
+    display: flex !important;
+  }
+  
+}
+
+@media screen and (min-width:1024px) {
+  .toggler{
+    display: none !important;
+  }
+ 
+}
+
